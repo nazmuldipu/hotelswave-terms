@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "hotelswave-terms": {
@@ -121,8 +121,16 @@
               "devServerTarget": "hotelswave-terms:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "hotelswave-terms"
+    }
+  },
+  "defaultProject": "hotelswave-terms",
+  "cli": {
+    "analytics": false
+  }
 }
